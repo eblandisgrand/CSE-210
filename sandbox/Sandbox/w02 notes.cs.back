@@ -1,0 +1,52 @@
+using System;
+// cd then enter the path
+class Program
+{
+    static void Main(string[] args)
+    {
+
+        //loops
+
+        //for
+
+        for (int i = 0; i < 10; i++)
+
+        {
+            Console.WriteLine($"i: {i}");
+        }
+
+        //foreach
+        List<string> fruits = new List<string>() {"Apple", "Banana", "Cherry"};
+        foreach (string fruit in fruits)
+        {
+            Console.WriteLine(fruit);
+        }
+
+        fruits.Add("Date");
+        fruits.Add("Eggplant");
+
+        fruits[0] = "Apricot";
+        Console.WriteLine(fruits[0]);
+
+
+        //while
+
+        Console.WriteLine("Make a choice (y/n): ");
+        string value = Console.ReadLine().ToUpper;
+        while (value != "Y" && value != "N")
+        {
+            Console.Write("Choose y or n: ");
+            value = Console.ReadLine().ToUpper
+        }
+
+        // do while
+        string value;
+        do
+        {
+            Console.Write("Enter y or n: ");
+            value = Console.ReadLine().ToUpper();
+
+        } while (value != "Y" && value != "N")
+
+    }
+}
