@@ -28,7 +28,6 @@ class Program
                     string response = Console.ReadLine();
                     JournalEntry newEntry = new JournalEntry(prompt, response);
                     journal.AddEntry(newEntry);
-                    
                     break;
 
                 case "2":
