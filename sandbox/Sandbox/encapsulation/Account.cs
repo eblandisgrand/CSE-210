@@ -10,7 +10,10 @@ public class Account
 
     public double Withdraw(double amount)
     {
-        _balance - amount
+        if (amount > 0 && amount > _balance)
+        {
+            _balance -= amount
+        }
     }
 
 
