@@ -7,7 +7,7 @@ class Program
     {
         Console.WriteLine("Scripture Memorizer\n");
 
-        // Step 1: Create multiple scriptures
+        //Create multiple scriptures
         List<Scripture> scriptures = new List<Scripture>
         {
             new Scripture(new Reference("Alma", 32, 28),
@@ -30,7 +30,7 @@ class Program
                 that whosoever believeth in him should not perish, but have everlasting life.")
         };
 
-        // Step 2: Display menu
+        //Display menu
         Console.WriteLine("Choose a scripture to memorize:\n");
         for (int i = 0; i < scriptures.Count; i++)
         {
@@ -45,7 +45,7 @@ class Program
             return;
         }
 
-        // Step 3: Select scripture and begin memorizing
+        //Select scripture and begin memorizing
         Scripture selected = scriptures[choice - 1];
         StartMemorization(selected);
     }

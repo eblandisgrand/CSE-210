@@ -11,7 +11,7 @@ public class Scripture
     {
         _reference = reference;
 
-        // Split the text into Word objects
+        //Split the text into Word objects
         string[] splitWords = text.Split(' ');
         foreach (string word in splitWords)
         {

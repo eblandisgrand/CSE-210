@@ -31,7 +31,7 @@ public class Reference
             return $"{_book} {_chapter}:{_startVerse}-{_endVerse}";
     }
 
-    // For displaying in the selection menu
+    
     public string GetReferenceText()
     {
         return GetReference();
