@@ -38,5 +38,6 @@ public class Calendar
                 Console.WriteLine();
             }
         }
+        Console.WriteLine("\n--------------------");
     }
 }
